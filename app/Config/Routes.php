@@ -34,3 +34,19 @@ $routes->get('/public/api/getdatainforme3', 'DashboardController::getDataInforme
 $routes->get('/public/api/getdatainforme4cache', 'DashboardController::getDataInforme4Cache');
 $routes->get('/public/api/getdatainforme5cache', 'DashboardController::getDataInforme5Cache');
 $routes->get('/public/api/getdatainforme3cache', 'DashboardController::getDataInforme3Cache');
+
+
+//Nuevo reporte Tarea 06 - con filtros de género y límite
+$routes->get('/gender/test', 'GenderController::test');
+$routes->get('/reportes/gender-limit-ui', 'GenderController::showGenderLimitUI');
+$routes->post('/reportes/gender-limit', 'GenderController::generateGenderLimitReport');
+
+//Dashboard Tarea 06 - Gráfico de Comparación de Editoras
+$routes->get('/dashboard/informe5', 'DashboardChartController::getInforme5');
+$routes->get('/public/api/getdatainforme5', 'DashboardChartController::getDataInforme5');
+$routes->get('/public/api/getdatainforme5cache', 'DashboardChartController::getDataInforme5Cache');
+
+//Dashboard Tarea 06 - Gráfico de Pesos Promedio por Editora
+$routes->get('/dashboard/informe6', 'WeightChartController::getInforme6');
+$routes->get('/public/api/getdatainforme6', 'WeightChartController::getDataInforme6');
+$routes->get('/public/api/getdatainforme6cache', 'WeightChartController::getDataInforme6Cache');
