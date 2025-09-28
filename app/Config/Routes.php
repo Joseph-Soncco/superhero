@@ -32,7 +32,6 @@ $routes->get('/dashboard/informe4', 'DashboardController::getInforme4');
 $routes->get('/public/api/getdatainforme2', 'DashboardController::getDataInforme2');
 $routes->get('/public/api/getdatainforme3', 'DashboardController::getDataInforme3');
 $routes->get('/public/api/getdatainforme4cache', 'DashboardController::getDataInforme4Cache');
-$routes->get('/public/api/getdatainforme5cache', 'DashboardController::getDataInforme5Cache');
 $routes->get('/public/api/getdatainforme3cache', 'DashboardController::getDataInforme3Cache');
 
 
